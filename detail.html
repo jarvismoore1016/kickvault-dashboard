@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan 1 Chicago — KickVault Dashboard</title>
+  <link rel="stylesheet" href="css/design-system.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/detail.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 12h2l2-7 3 14 3-10 2 3h8"/>
+        </svg>
+      </div>
+      <div class="sidebar-brand-text">
+        <div class="sidebar-brand-name">KickVault</div>
+        <div class="sidebar-brand-sub">Dashboard</div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-label">Main</div>
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span class="nav-link-label">Overview</span>
+        </a>
+        <a href="collection.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <span class="nav-link-label">Collection</span>
+        </a>
+        <a href="schedule.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span class="nav-link-label">Care Schedule</span>
+          <span class="nav-badge">2</span>
+        </a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-label">Account</div>
+        <a href="settings.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2"/></svg>
+          <span class="nav-link-label">Settings</span>
+        </a>
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-user">
+        <div class="avatar avatar-sm" style="background: var(--color-primary-600); color: white;">JD</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">John Doe</div>
+          <div class="sidebar-user-email">john.doe@email.com</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <header class="page-header">
+      <div class="header-left">
+        <div style="display:flex; align-items:center; gap: var(--space-1); margin-bottom: 2px;">
+          <a href="collection.html" style="font-size: var(--text-xs); color: var(--text-tertiary);">Collection</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          <span style="font-size: var(--text-xs); color: var(--text-secondary);">Jordan 1 Retro High OG "Chicago"</span>
+        </div>
+        <h1 class="page-title">Shoe Detail</h1>
+      </div>
+      <div class="header-right">
+        <button class="btn btn-tertiary btn-sm">Edit</button>
+        <button class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Log Cleaning
+        </button>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <!-- Hero -->
+      <div class="detail-hero">
+        <div class="detail-hero-image">👟</div>
+        <div class="detail-hero-info">
+          <div class="detail-hero-brand">Nike / Jordan</div>
+          <div class="detail-hero-name">Jordan 1 Retro High OG "Chicago"</div>
+          <div class="detail-hero-stats">
+            <div class="detail-hero-stat">
+              <div class="detail-hero-stat-value">23</div>
+              <div class="detail-hero-stat-label">Total Wears</div>
+            </div>
+            <div class="detail-hero-stat">
+              <div class="detail-hero-stat-value">$180</div>
+              <div class="detail-hero-stat-label">Purchase Price</div>
+            </div>
+            <div class="detail-hero-stat">
+              <div class="detail-hero-stat-value">Feb 28</div>
+              <div class="detail-hero-stat-label">Last Worn</div>
+            </div>
+            <div class="detail-hero-stat">
+              <div style="display:flex; align-items:center; gap: var(--space-1);">
+                <span class="badge badge-success">Good</span>
+              </div>
+              <div class="detail-hero-stat-label">Condition</div>
+            </div>
+          </div>
+          <div class="detail-hero-actions">
+            <button class="btn btn-secondary btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Record Wear
+            </button>
+            <button class="btn btn-tertiary btn-sm">Schedule Care</button>
+            <button class="btn btn-ghost btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="detail-body">
+
+        <!-- Main: Tabs -->
+        <div class="detail-main">
+          <div class="tabs-container" data-tabs>
+            <div class="tabs-nav" role="tablist">
+              <button class="tab-btn active" data-tab="tab-overview" role="tab" aria-selected="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                Overview
+              </button>
+              <button class="tab-btn" data-tab="tab-care" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Care History
+              </button>
+              <button class="tab-btn" data-tab="tab-notes" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Notes
+              </button>
+            </div>
+            <div class="tab-panels">
+
+              <!-- Overview Tab -->
+              <div class="tab-panel active" id="tab-overview" role="tabpanel">
+                <div class="form-section-divider">
+                  <span class="form-section-divider-label">Specifications</span>
+                  <div class="form-section-divider-line"></div>
+                </div>
+                <div class="spec-grid">
+                  <div class="spec-item">
+                    <div class="spec-label">Colorway</div>
+                    <div class="spec-value">Black / Sport Royal / White</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Size</div>
+                    <div class="spec-value">US 10 / EU 44</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Purchase Date</div>
+                    <div class="spec-value">January 15, 2024</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Purchase Price</div>
+                    <div class="spec-value">$180 (Retail)</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Category</div>
+                    <div class="spec-value">Lifestyle / Basketball</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Style Code</div>
+                    <div class="spec-value">555088-061</div>
+                  </div>
+                </div>
+
+                <div class="form-section-divider">
+                  <span class="form-section-divider-label">Condition &amp; Wear</span>
+                  <div class="form-section-divider-line"></div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                  <div class="spec-item">
+                    <div class="spec-label">Current Condition</div>
+                    <div style="margin-top: 6px;">
+                      <!-- Condition Rating — undocumented component -->
+                      <div class="condition-rating">
+                        <div class="condition-rating-dots">
+                          <div class="rating-dot rating-dot--filled-good"></div>
+                          <div class="rating-dot rating-dot--filled-good"></div>
+                          <div class="rating-dot rating-dot--filled-good"></div>
+                          <div class="rating-dot rating-dot--empty"></div>
+                          <div class="rating-dot rating-dot--empty"></div>
+                        </div>
+                        <span class="condition-rating-label">Good</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Total Wears</div>
+                    <div class="spec-value" style="font-size: var(--text-xl);">23</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Last Worn</div>
+                    <div class="spec-value">February 28, 2025</div>
+                  </div>
+                  <div class="spec-item">
+                    <div class="spec-label">Last Cleaned</div>
+                    <div class="spec-value">March 2, 2025</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Care History Tab -->
+              <div class="tab-panel" id="tab-care" role="tabpanel">
+                <div class="form-section-divider">
+                  <span class="form-section-divider-label">Care Events</span>
+                  <div class="form-section-divider-line"></div>
+                </div>
+
+                <!-- Care Timeline — undocumented one-off pattern -->
+                <div class="care-timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-type">Protective Spray</div>
+                    <div class="timeline-item-date">March 2, 2025</div>
+                    <div class="timeline-item-note">Pre-season protection before spring wear. Applied Crep Protect to uppers and laces.</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-type">Deep Clean</div>
+                    <div class="timeline-item-date">January 20, 2025</div>
+                    <div class="timeline-item-note">Post-holiday cleaning. White midsole was lightly yellowed — treated with Jason Markk solution. Sole restored.</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-type">Protective Spray</div>
+                    <div class="timeline-item-date">November 15, 2024</div>
+                    <div class="timeline-item-note">Before winter season. Light re-application to high-wear areas on the toe box.</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-type">Deep Clean</div>
+                    <div class="timeline-item-date">August 3, 2024</div>
+                    <div class="timeline-item-note">Wore to summer BBQ, got grass stains on the toe box. Spot treatment applied. All clear after 2 rounds.</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-type">Sole Cleaning</div>
+                    <div class="timeline-item-date">May 12, 2024</div>
+                    <div class="timeline-item-note">Bottom cleaning after festival. Standard wipe-down with damp brush.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Notes Tab -->
+              <div class="tab-panel" id="tab-notes" role="tabpanel">
+                <div style="margin-bottom: var(--space-2);">
+                  <div class="input-group">
+                    <label class="input-label" for="shoe-notes">Personal Notes</label>
+                    <textarea class="textarea" id="shoe-notes" rows="8">Grail pair. These are from the 2024 Nike re-release. Handle with care. Only wear on special occasions — usually under 5x per year.
+
+Planning to rotate these with the Jordan 4 Bred for formal events. Have a replacement pair stored in the original box.
+
+Crep Protect is the go-to for this colorway — Reshoevn8r sometimes leaves residue on the red panels.</textarea>
+                  </div>
+                </div>
+                <div style="display:flex; justify-content:flex-end;">
+                  <button class="btn btn-primary btn-sm">Save Notes</button>
+                </div>
+              </div>
+
+            </div><!-- /tab-panels -->
+          </div><!-- /tabs-container -->
+        </div><!-- /detail-main -->
+
+        <!-- Sidebar Panel — token drift -->
+        <div class="detail-sidebar">
+          <div class="detail-sidebar-panel">
+            <div class="detail-sidebar-panel-title">Care Recommendations</div>
+            <div class="care-rec-item">
+              <div class="care-rec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="care-rec-body">
+                <div class="care-rec-name">Protective Spray</div>
+                <div class="care-rec-due">Every 30 days · Next: Mar 8</div>
+              </div>
+            </div>
+            <div class="care-rec-item">
+              <div class="care-rec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="care-rec-body">
+                <div class="care-rec-name">Deep Clean</div>
+                <div class="care-rec-due">Every 90 days · Next: Apr 3</div>
+              </div>
+            </div>
+            <div class="care-rec-item">
+              <div class="care-rec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="care-rec-body">
+                <div class="care-rec-name">Sole Inspection</div>
+                <div class="care-rec-due">After every 10 wears</div>
+              </div>
+            </div>
+            <div class="next-cleaning-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span class="next-cleaning-date-text">Next scheduled: March 8, 2025</span>
+            </div>
+          </div>
+
+          <div class="detail-sidebar-panel">
+            <div class="detail-sidebar-panel-title">Storage Info</div>
+            <div style="display:flex; flex-direction:column; gap: var(--space-1);">
+              <div class="care-rec-item">
+                <div class="care-rec-body">
+                  <div class="spec-label">Storage Method</div>
+                  <div class="care-rec-name">Original Box + Silica Gel</div>
+                </div>
+              </div>
+              <div class="care-rec-item">
+                <div class="care-rec-body">
+                  <div class="spec-label">Location</div>
+                  <div class="care-rec-name">Top shelf, closet A</div>
+                </div>
+              </div>
+              <div class="care-rec-item" style="border-bottom: none;">
+                <div class="care-rec-body">
+                  <div class="spec-label">Inserts</div>
+                  <div class="care-rec-name">Toe shapers in use</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /detail-sidebar -->
+
+      </div><!-- /detail-body -->
+    </div><!-- /content -->
+  </div><!-- /main -->
+</div><!-- /app -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

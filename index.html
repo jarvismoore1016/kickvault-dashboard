@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview — KickVault Dashboard</title>
+  <link rel="stylesheet" href="css/design-system.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/overview.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 12h2l2-7 3 14 3-10 2 3h8"/>
+        </svg>
+      </div>
+      <div class="sidebar-brand-text">
+        <div class="sidebar-brand-name">KickVault</div>
+        <div class="sidebar-brand-sub">Dashboard</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-label">Main</div>
+        <a href="index.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span class="nav-link-label">Overview</span>
+        </a>
+        <a href="collection.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <span class="nav-link-label">Collection</span>
+        </a>
+        <a href="schedule.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span class="nav-link-label">Care Schedule</span>
+          <span class="nav-badge">2</span>
+        </a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-label">Account</div>
+        <a href="settings.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2"/></svg>
+          <span class="nav-link-label">Settings</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-user">
+        <div class="avatar avatar-sm" style="background: var(--color-primary-600); color: white;">JD</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">John Doe</div>
+          <div class="sidebar-user-email">john.doe@email.com</div>
+        </div>
+        <svg class="sidebar-user-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <header class="page-header">
+      <div class="header-left">
+        <h1 class="page-title">Overview</h1>
+        <div class="page-subtitle">Wednesday, March 5, 2025</div>
+      </div>
+      <div class="header-right">
+        <button class="icon-btn icon-btn-badge" aria-label="Notifications" data-tooltip="Notifications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </button>
+        <button class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add Shoe
+        </button>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <!-- Stat Cards -->
+      <div class="stat-cards" style="margin-bottom: var(--space-3);">
+        <div class="stat-card">
+          <div class="stat-card-icon stat-card-icon--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div class="stat-card-value">9</div>
+          <div class="stat-card-label">Total Shoes</div>
+          <div class="stat-card-meta">+1 this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-icon stat-card-icon--warning">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="stat-card-value">2</div>
+          <div class="stat-card-label">Due for Cleaning</div>
+          <div class="stat-card-meta">1 overdue</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-icon stat-card-icon--success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="stat-card-value">12</div>
+          <div class="stat-card-label">Wears This Month</div>
+          <div class="stat-card-meta">Nike Dunk Low Panda</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-icon stat-card-icon--info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="stat-card-value">$1,425</div>
+          <div class="stat-card-label">Collection Value</div>
+          <div class="stat-card-meta">At purchase price</div>
+        </div>
+      </div>
+
+      <!-- Main Grid -->
+      <div class="overview-grid">
+        <div class="overview-main">
+
+          <!-- Recent Activity -->
+          <div class="card">
+            <div class="section-head">
+              <span class="section-title">Recent Activity</span>
+              <span class="section-action">View all</span>
+            </div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+                <div class="activity-body">
+                  <div class="activity-text">Added <strong>Nike Dunk Low "Panda"</strong> to collection</div>
+                  <div class="activity-time">Today · 2:14 PM</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="activity-body">
+                  <div class="activity-text">Logged cleaning for <strong>Jordan 4 Retro "Bred"</strong></div>
+                  <div class="activity-time">Yesterday · 11:08 AM</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <div class="activity-body">
+                  <div class="activity-text">Condition updated: <strong>Adidas Ultraboost 22</strong> — Good → Fair</div>
+                  <div class="activity-time">Feb 28 · 4:47 PM</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div class="activity-body">
+                  <div class="activity-text">Wear logged for <strong>New Balance 990v5 "Grey"</strong></div>
+                  <div class="activity-time">Feb 28 · 8:22 AM</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="activity-body">
+                  <div class="activity-text">Logged cleaning for <strong>Nike Air Max 90 "Infrared"</strong></div>
+                  <div class="activity-time">Feb 25 · 3:05 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Condition Overview -->
+          <div class="card">
+            <div class="section-head">
+              <span class="section-title">Shoe Condition Breakdown</span>
+              <span class="section-action">Details</span>
+            </div>
+            <div class="condition-overview">
+              <div class="condition-bar-row">
+                <span class="condition-bar-label">
+                  <span style="font-size: var(--text-sm); color: var(--text-primary);">Good</span>
+                </span>
+                <div class="condition-bar-track">
+                  <div class="condition-bar-fill condition-bar-fill--good" style="width: 55%;"></div>
+                </div>
+                <span class="condition-bar-count">5</span>
+              </div>
+              <div class="condition-bar-row">
+                <span class="condition-bar-label">
+                  <span style="font-size: var(--text-sm); color: var(--text-primary);">Fair</span>
+                </span>
+                <div class="condition-bar-track">
+                  <div class="condition-bar-fill condition-bar-fill--fair" style="width: 33%;"></div>
+                </div>
+                <span class="condition-bar-count">3</span>
+              </div>
+              <div class="condition-bar-row">
+                <span class="condition-bar-label">
+                  <span style="font-size: var(--text-sm); color: var(--text-primary);">Needs Attention</span>
+                </span>
+                <div class="condition-bar-track">
+                  <div class="condition-bar-fill condition-bar-fill--needs-attention" style="width: 11%;"></div>
+                </div>
+                <span class="condition-bar-count">1</span>
+              </div>
+            </div>
+            <div class="condition-legend" style="margin-top: var(--space-2); padding-top: var(--space-2); border-top: 1px solid var(--border-default);">
+              <div class="condition-legend-item">
+                <div class="condition-dot condition-dot--good"></div>
+                <span>Good (55%)</span>
+              </div>
+              <div class="condition-legend-item">
+                <div class="condition-dot condition-dot--fair"></div>
+                <span>Fair (34%)</span>
+              </div>
+              <div class="condition-legend-item">
+                <div class="condition-dot condition-dot--needs-attention"></div>
+                <span>Needs Attention (11%)</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /overview-main -->
+
+        <div class="overview-side">
+
+          <!-- Quick Actions -->
+          <div class="card">
+            <div class="section-head" style="margin-bottom: var(--space-2);">
+              <span class="section-title">Quick Actions</span>
+            </div>
+            <div class="quick-actions">
+              <button class="quick-action-btn">
+                <div class="quick-action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+                <span class="quick-action-label">Add New Shoe</span>
+                <svg class="quick-action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+              <button class="quick-action-btn">
+                <div class="quick-action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <span class="quick-action-label">Log a Cleaning</span>
+                <svg class="quick-action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+              <button class="quick-action-btn">
+                <div class="quick-action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <span class="quick-action-label">Record a Wear</span>
+                <svg class="quick-action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+              <button class="quick-action-btn">
+                <div class="quick-action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <span class="quick-action-label">Schedule Care</span>
+                <svg class="quick-action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Care Alerts -->
+          <div class="card">
+            <div class="section-head">
+              <span class="section-title">Care Alerts</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: var(--space-1-5);">
+              <div class="alert alert-error">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <div>
+                  <div style="font-weight: var(--font-semibold);">Nike Air Force 1 Low</div>
+                  <div>Deep clean overdue by 30 days</div>
+                </div>
+              </div>
+              <div class="alert alert-warning">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <div>
+                  <div style="font-weight: var(--font-semibold);">Asics Gel-Kayano 14</div>
+                  <div>Sole cleaning overdue by 15 days</div>
+                </div>
+              </div>
+              <a href="schedule.html" class="btn btn-tertiary btn-sm w-full" style="justify-content: center; margin-top: var(--space-0-5);">View Care Schedule</a>
+            </div>
+          </div>
+
+        </div><!-- /overview-side -->
+      </div><!-- /overview-grid -->
+
+    </div><!-- /content -->
+  </div><!-- /main -->
+</div><!-- /app -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
