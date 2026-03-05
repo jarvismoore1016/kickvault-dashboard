@@ -37,17 +37,17 @@
   --color-neutral-800: #1e293b;
   --color-neutral-900: #0f172a;
 
-  /* --- Color Scale: Primary (Indigo) --- */
-  --color-primary-50:  #eef2ff;
-  --color-primary-100: #e0e7ff;
-  --color-primary-200: #c7d2fe;
-  --color-primary-300: #a5b4fc;
-  --color-primary-400: #818cf8;
-  --color-primary-500: #6366f1;
-  --color-primary-600: #4f46e5;
-  --color-primary-700: #4338ca;
-  --color-primary-800: #3730a3;
-  --color-primary-900: #312e81;
+  /* --- Color Scale: Primary (Teal) --- */
+  --color-primary-50:  #f0fdfa;
+  --color-primary-100: #ccfbf1;
+  --color-primary-200: #99f6e4;
+  --color-primary-300: #5eead4;
+  --color-primary-400: #2dd4bf;
+  --color-primary-500: #14b8a6;
+  --color-primary-600: #0d9488;
+  --color-primary-700: #0f766e;
+  --color-primary-800: #115e59;
+  --color-primary-900: #134e4a;
 
   /* --- Color Scale: Success (Emerald) --- */
   --color-success-50:  #ecfdf5;
@@ -164,7 +164,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
   font-size: var(--text-base);
   font-weight: var(--font-normal);
   color: var(--text-primary);
@@ -640,4 +640,60 @@ img, svg { display: block; }
   color: var(--text-primary);
   cursor: pointer;
   user-select: none;
+}
+
+
+/* ============================================================
+   ACCESSIBILITY & MOTION
+   ============================================================ */
+
+/* Focus-visible: keyboard navigation indicator (WCAG 2.1 AA) */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Remove default outline only when focus-visible is supported */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Respect OS-level reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ============================================================
+   MICRO-INTERACTIONS
+   ============================================================ */
+
+/* Card lift on hover (interactive cards) */
+.card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-neutral-300);
+}
+
+/* Button tactile active state */
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* Entrance animation keyframes */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
